@@ -1,6 +1,6 @@
-organization := "pk"
+organization := "com.github.petekneller"
 
-name := "type-system-experiments"
+name := "experiments-scala-type-system"
 
 version := "dev"
 
