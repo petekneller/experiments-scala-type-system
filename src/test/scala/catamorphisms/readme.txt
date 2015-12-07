@@ -1,0 +1,1 @@
+examples from http://en.wikipedia.org/wiki/Catamorphism as at 6/10/14. Didn't finish all of them, it got a bit too deep
