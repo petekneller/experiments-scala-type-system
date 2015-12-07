@@ -14,6 +14,12 @@ libraryDependencies += "com.chuusai" %% "shapeless" % "2.1.0"
 
 libraryDependencies += "org.specs2" %% "specs2" % "2.3.11" % "test"
 
+libraryDependencies += "net.liftweb" %% "lift-json" % "2.6"
+
+libraryDependencies += "junit" % "junit-dep" % "4.11"
+
+libraryDependencies += "org.hamcrest" % "hamcrest-all" % "1.3"
+
 val monocleVersion = "1.1.1"
 
 libraryDependencies ++= Seq(
