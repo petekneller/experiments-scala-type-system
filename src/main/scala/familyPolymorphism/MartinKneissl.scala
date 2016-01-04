@@ -2,6 +2,7 @@ package familyPolymorphism
 
 // from http://www.familie-kneissl.org/Members/martin/blog/family-polymorphism-in-scala
 // which seems to now be dead, so inlining some of his comments from the blog
+// motivated by the paper 'Family Polymorphism' by Erik Ernst
 
 object MartinKneissl {
 
