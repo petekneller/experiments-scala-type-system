@@ -1,6 +1,6 @@
-package familyPolymorphism
+package FboundedTypes
 
-object ParametricSubtypes {
+object MyExperiments {
 
   // can't be used parametrically
   trait FooInterface {

@@ -1,4 +1,4 @@
-package familyPolymorphism
+package FboundedTypes
 
 // code examples from:
 // http://logji.blogspot.co.uk/2012/11/f-bounded-type-polymorphism-give-up-now.html
