@@ -10,6 +10,8 @@ libraryDependencies += "org.scalatest" %% "scalatest" % "2.2.2" % "test"
 
 libraryDependencies += "org.scalaz" %% "scalaz-core" % "7.1.0"
 
+libraryDependencies += "org.scalaz" %% "scalaz-effect" % "7.1.0"
+
 libraryDependencies += "com.chuusai" %% "shapeless" % "2.1.0"
 
 libraryDependencies += "org.specs2" %% "specs2" % "2.3.11" % "test"
