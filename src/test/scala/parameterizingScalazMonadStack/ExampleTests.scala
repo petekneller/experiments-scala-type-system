@@ -58,13 +58,23 @@ class ExampleTests extends FunSuite {
       r
     }
 
+    // Hmmm, how do I make this work
+    def doesSomeReading2[M[_, _]](implicit reader: MonadReader[M, Env]): M[Env, String] = {
+      val r: M[Env, String] = reader.asks(env => env("x").toUpperCase)
+      r
+    }
+
     def doesSomeIO[M[_]](a: String)(implicit applicative: Applicative[M]): M[Int] = {
       IO.putStrLn(a)
       applicative.point(2)
     }
 
+//    implicit val F: MonadReader[({ type L[a, b] = ReaderT[Eith, a, b] })#L, Env] = Kleisli.kleisliMonadReader[Eith, Env]
+//    implicit val A: Applicative[MyM] = implicitly[Applicative[MyM]]
+
     val program: MyM[Int] = for {
-      someProp <- doesSomeReading[MyM]
+      someProp <- doesSomeReading2[({ type L[a, b] = ReaderT[Eith, a, b] })#L](Kleisli.kleisliMonadReader[Eith, Env])
+//      someProp <- doesSomeReading[MyM]
       i <- doesSomeIO[MyM](someProp)
     } yield i * 2
 
