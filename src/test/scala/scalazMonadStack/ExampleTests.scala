@@ -1,4 +1,4 @@
-package parameterizingScalazMonadStack
+package scalazMonadStack
 
 import org.scalatest.FunSuite
 
