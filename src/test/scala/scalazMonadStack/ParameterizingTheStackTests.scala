@@ -7,7 +7,7 @@ import IO._
 import scalaz._
 import Kleisli._
 
-class ExampleTests extends FunSuite {
+class ParameterizingTheStackTests extends FunSuite {
 
   // ReaderT, EitherT, IO
   type Err = String
