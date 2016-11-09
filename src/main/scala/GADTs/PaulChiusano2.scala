@@ -2,7 +2,7 @@ package GADTs
 
 // Pauls' Gist here: https://gist.github.com/pchiusano/1369239
 
-object PaulChiusano {
+object PaulChiusano2 {
 
   /** GADTs in Scala and their limitations */
 
