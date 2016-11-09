@@ -63,13 +63,19 @@ object SeanSeefried {
     case class Eq[A](e1: Exp[A], e2: Exp[A])                  extends Exp[Boolean]
   }
 
-  /*
+   /*
   This is wierd, but apparently its because the case class constructors aren't polymorphic ie.
     LitInt :: Integer => Exp Integer
   where it needs to be
     LitInt :: Integer => Exp a
   in order for the pattern match to work. The Cond one will work, because is polymorphic in one type argument
 
+  From the blog comments, there comes this further example:
+
+   data Foo a where X :: Foo ()
+   bar X = ()
+
+    what type is bar? bar :: Foo a -> a  ,or  bar :: Foo a -> ()  ?
    */
 
   // One way of fixing it would be to just fall back on OO: each subclass provides its own impl of eval. Sean has an example of this but I didn't copy it.
