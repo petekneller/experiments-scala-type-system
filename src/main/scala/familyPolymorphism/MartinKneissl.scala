@@ -107,4 +107,22 @@ object MartinKneissl {
   val oe2b = addSome2(og)
   oe2b.enabled = false // now OK.
 
+  /*
+   Since the post this was based on was written, Scala now allows you to use dependent-types based on method parameters
+   */
+
+  def addSome3(graph: Graph): graph.Edge = {
+    val n1, n2 = graph.mkNode()
+    graph.connect(n1,n2)
+  }
+
+  val e2c = addSome3(g)
+  val oe2c = addSome3(og)
+  oe2c.enabled = false // also OK
+
+  /*
+   Accessing type members is done with # when accessing it via a _type_ eg: A#TMember
+   and using a . when via an _instance_ eg: a.TMember
+   */
+
 }
