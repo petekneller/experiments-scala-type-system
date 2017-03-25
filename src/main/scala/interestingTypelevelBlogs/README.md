@@ -1,0 +1,1 @@
+This folder contains copies of interesting posts to the typelevel blog. They are not my work. I'm copying them here so I can find them again when I know I once read something but can't remember the source.
